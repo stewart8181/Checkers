@@ -1,0 +1,57 @@
+body {
+    display: flex;
+}
+
+.board {
+    width: 520px;
+    height: 520px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: repeat(8, auto)
+}
+
+.cell {
+	width: 65px;
+	height: 65px;
+	border: 1px solid black;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.empty {
+    background-color: rgb(230, 157, 22);
+}
+
+.white {
+    background-color: antiquewhite;
+}
+
+.game-info {
+    padding: 20px;
+}
+
+/* we replace empty with Red, Black, Red_King or Black_King */
+/* p class black and p class red */
+
+.black-piece {
+	width: 20px;
+	height: 20px;
+	padding: 12px;
+	background-color: black;
+	border: 1px solid antiquewhite;
+	border-radius: 50px;
+}
+
+.red-piece {
+	width: 20px;
+	height: 20px;
+	padding: 12px;
+	background-color: red;
+	border: 1px solid antiquewhite;
+	border-radius: 50px;
+}
